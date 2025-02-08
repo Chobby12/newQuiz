@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.quiz-container {
+    display: grid;
+    gap: 10px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 520px;
+    width: 100%;
+    text-align: left;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#question{
+    border: 1px solid #28a745;
+    padding: 10px;
+    border-right: 10px #28a745 solid;
+}
+#question-number{
+    display: none;
+}
+#progress{
+    font-size: .9rem;
+    border: 1px dashed #28a745;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 12px;
+}
+.options button {
+    text-align: left;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    background: white;
+    border: 1px solid #28a745;
+    color: #121212;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.options button:hover {
+    background: rgb(211, 243, 211);
+}
+.selected {
+    background: #28a745 !important;
+    color: #fff !important;
+}
+.correct {
+    background: #caeed3 !important;
+}
+.incorrect {
+    background: #f098a1 !important;
+}
+.hidden {
+    display: none;
+}
+.btns{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#next, #prev, #submit{
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.neww{
+    padding: 50px 0;
+    max-width: 600px;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    gap: 10px;
+}
+.score{
+    grid-row-start: 2;
+    background: #caeed3;
+    padding: 20px 0;
+    text-align: center;   
+    font-size: 2rem;
+
+}
+.neww p{
+    padding: 5px;
+    border: 1px solid #28a745;
+}

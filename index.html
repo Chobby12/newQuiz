@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>theEffects Quiz</h1>
+        <form action="quiz.html">
+            <input type="text" placeholder="Enter your name to play" id="username" required>
+            <button class="play">Play</button>
+        </form>
+    </div>
+    <script>
+        const userName = document.getElementById("username");
+        function saveUser(){
+            let name = userName.value;
+            localStorage.setItem("name",name)
+        }
+        document.querySelector(".play").addEventListener("click",saveUser)
+    </script>
+</body>
+</html>
