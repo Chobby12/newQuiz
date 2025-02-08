@@ -1,7 +1,6 @@
 const userName = localStorage.getItem("name").charAt(0).toUpperCase().concat(localStorage.getItem("name").slice(1));
 
 const questions = [
-    { question: "What is 2 + 2?", options: ["3", "4", "5", "6"], answer: "4" },
     { question: "What is the capital of France?", options: ["Berlin", "Madrid", "Paris", "Rome"], answer: "Paris" },
     { question: "What is 5 * 6?", options: ["11", "30", "25", "35"], answer: "30" },
     { question: "Which planet is known as the Red Planet?", options: ["Earth", "Mars", "Jupiter", "Venus"], answer: "Mars" },
@@ -12,6 +11,10 @@ const questions = [
 const setQuestion = (question, options, answer) => questions.push({question, options, answer})
 setQuestion("What is the capital of Canada?",["Ottawa","Seatle","WashingtonDC","Chicago"],"Ottawa")
 setQuestion("What is the longest River in Africa?",["Nile","Niger","Orange","Senegal"],"Nile")
+addEntry("What is the capital of Ethiopia?",["Addis Ababa","Abidjan","Lome","Tokyo"],"Addis Ababa")
+addEntry("Who is the prime minister of Canada?",["David Cameroon","Giorgia Meloni","Justin Tradeau", "Donald Tusk"],"Justin Tradeau")
+addEntry("Who was Aristotle's teacher",['Aristole','Seneca','Plato','Martin Buber'],"Aristotle")
+addEntry("Who is the Prime Minister of India?",["Narenda Modi","Benjamin Netanyahu","Xi Jinping","Kim Jong Un"], "Narenda Modi")
 
 
 let currentQuestionIndex = 0;
