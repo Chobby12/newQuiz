@@ -12,10 +12,10 @@ const questions = [
 const setQuestion = (question, options, answer) => questions.push({question, options, answer})
 setQuestion("What is the capital of Canada?",["Ottawa","Seatle","WashingtonDC","Chicago"],"Ottawa")
 setQuestion("What is the longest River in Africa?",["Nile","Niger","Orange","Senegal"],"Nile")
-addEntry("What is the capital of Ethiopia?",["Addis Ababa","Abidjan","Lome","Tokyo"],"Addis Ababa")
-addEntry("Who is the prime minister of Canada?",["David Cameroon","Giorgia Meloni","Justin Tradeau", "Donald Tusk"],"Justin Tradeau")
-addEntry("Who was Aristotle's teacher",['Aristole','Seneca','Plato','Martin Buber'],"Aristotle")
-addEntry("Who is the Prime Minister of India?",["Narenda Modi","Benjamin Netanyahu","Xi Jinping","Kim Jong Un"], "Narenda Modi")
+setQuestion("What is the capital of Ethiopia?",["Addis Ababa","Abidjan","Lome","Tokyo"],"Addis Ababa")
+setQuestion("Who is the prime minister of Canada?",["David Cameroon","Giorgia Meloni","Justin Tradeau", "Donald Tusk"],"Justin Tradeau")
+setQuestion("Who was Aristotle's teacher",['Aristole','Seneca','Plato','Martin Buber'],"Aristotle")
+setQuestion("Who is the Prime Minister of India?",["Narenda Modi","Benjamin Netanyahu","Xi Jinping","Kim Jong Un"], "Narenda Modi")
 
 
 let currentQuestionIndex = 0;
