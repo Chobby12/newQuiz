@@ -1,6 +1,7 @@
 const userName = localStorage.getItem("name").charAt(0).toUpperCase().concat(localStorage.getItem("name").slice(1));
 
 const questions = [
+    { question: "What is 2 + 2?", options: ["3", "4", "5", "6"], answer: "4" },
     { question: "What is the capital of France?", options: ["Berlin", "Madrid", "Paris", "Rome"], answer: "Paris" },
     { question: "What is 5 * 6?", options: ["11", "30", "25", "35"], answer: "30" },
     { question: "Which planet is known as the Red Planet?", options: ["Earth", "Mars", "Jupiter", "Venus"], answer: "Mars" },
